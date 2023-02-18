@@ -6,10 +6,7 @@
 #endif
 #define CODE_IMAGE_STR "TasmoCompiler-esp82664M"
 
-#ifdef USE_ENERGY_SENSOR
-  #undef USE_ENERGY_SENSOR
-#endif
-#define USE_ENERGY_SENSOR
+
 
 #ifdef USE_MHZ19
   #undef USE_MHZ19
@@ -266,10 +263,7 @@
 #endif
 #define USE_ENERGY_DUMMY
 
-#ifdef USE_HOME_ASSISTANT
-  #undef USE_HOME_ASSISTANT
-#endif
-#define USE_HOME_ASSISTANT
+
 
 #ifdef USE_I2C
   #undef USE_I2C
@@ -353,19 +347,13 @@
   #undef USE_MODBUSBRIDGE_TCP
 #endif
 
-#ifdef USE_MQTT_TLS
-  #undef USE_MQTT_TLS
-#endif
-#define USE_MQTT_TLS
+
 
 #ifdef USE_RC_SWITCH
   #undef USE_RC_SWITCH
 #endif
 
-#ifdef USE_RULES
-  #undef USE_RULES
-#endif
-#define USE_RULES
+
 
 #ifdef USE_EXPRESSION
   #undef USE_EXPRESSION
@@ -516,10 +504,7 @@
   #undef USE_ZIGBEE
 #endif
 
-#ifdef MY_LANGUAGE
-  #undef MY_LANGUAGE
-#endif
-#define MY_LANGUAGE	fr_FR
+
 
 #ifdef MODULE
 #undef MODULE
@@ -531,13 +516,4 @@
 #endif
 #define FALLBACK_MODULE        USER_MODULE   // to Select the default model as FALLBACK when the user does a RESET 1 
 
-#ifdef USER_TEMPLATE
-#undef USER_TEMPLATE
-#endif
-#define USER_TEMPLATE          "{\"NAME\":\"T-Info\",\"GPIO\":[0,0,0,5152,0,0,0,0,0,1536,0,1472,0,0],\"FLAG\":0,\"BASE\":18}" // [Template] Set JSON template
 
-#ifdef USE_TELEINFO
-  #undef USE_TELEINFO
-#endif
-#define USE_TELEINFO
-#endif
